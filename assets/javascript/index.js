@@ -5,7 +5,6 @@ const renderBadge = () => {
   const badge = document.querySelector('#cart-badge')
   badge.innerText = cartLS.list().reduce((prev, curr) => prev + curr.quantity, 0)
 }
-
 const listenToAdd = (buttons) => {
 buttons.forEach((button) => {
 button.addEventListener('click', (event) => {
@@ -22,6 +21,7 @@ product_name: name,
 product_price: Number(price)
 })
 })
+})}
 })
 
 const cartItemsListeners = () => {
